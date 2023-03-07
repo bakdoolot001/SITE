@@ -1,0 +1,42 @@
+{% load static %}
+<header>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="header">
+            <a class="navbar-brand" href="index.html">
+                <img src="{% static 'main/img/logo_burkut.png' %}" width="100" height="70" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="icons">
+            <a href="http://instagram.com/share.php?url=file:///home/bakdoolot/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/OUR%20SITE/bishkek.html"><i class="fa-brands fa-instagram"></i></a>
+            <a href="http://facebook.com/share.php?u=file:///home/bakdoolot/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/OUR%20SITE/bishkek.html"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://telegram.me/share/url?url=file:///home/bakdoolot/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/OUR%20SITE/bishkek.html"><i class="fa-brands fa-telegram"></i></a>
+            <a href="http://whatsapp.com/share.php?url=file:///home/bakdoolot/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/OUR%20SITE/bishkek.html"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+            <nav class="navbar navbar-light bg-light">
+              <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search"  aria-label="Search" style="width: 300px;">
+                  <a href="#" type="search"><i class="fa-solid fa-magnifying-glass"></i></a>
+              </form>
+            </nav>
+          <div class="langWarp" style="margin-left: 100px;">
+                <a href="#" language="english">EN</a>
+                <a href="#" language="russia">RU</a>
+                <a href="#" language="kyrgyz">KG</a>
+          </div>
+        </nav>
+    </div>
+    <!-- Menu -->
+
+    <nav class="page__menu menu">
+        <ul class="menu__list r-list" style="margin-left: 100px;">
+          <li class="menu__group"><a href="{% url 'home' %}" class="menu__link r-link text-underlined">Башкы-Бет</a></li>
+          <li class="menu__group"><a href="{% url 'kitepter' %}" class="menu__link r-link text-underlined">Китептер</a></li>
+          <li class="menu__group"><a href="{% url 'belgiluu-insandar' %}" class="menu__link r-link text-underlined">Белгилүү инсандар</a></li>
+          <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">Биз жөнүндө</a></li>
+        </ul>
+    </nav>
+
+<!-- Menu -->
+</header>

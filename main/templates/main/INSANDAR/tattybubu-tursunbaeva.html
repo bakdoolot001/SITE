@@ -1,0 +1,256 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Таттыбүбү Турсунбаева</title>
+	<link rel="shortcut icon"
+	href="{% static 'main/img/logo_burkut2.png' %}"
+	type="image/x-icon">>
+</head>
+<link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<body>
+	<header>
+		<div>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light" id="header">
+				<a class="navbar-brand" href="{% url 'home' %}">
+					<img src="{% static 'main/img/logo_burkut.png' %}" width="100" height="70" class="logo">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="icons">
+				<a href="http://instagram.com/share.php?url=file:///home/bakdoolot/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/OUR%20SITE/bishkek.html"><i class="fa-brands fa-instagram"></i></a>
+				<a href="http://facebook.com/share.php?u=file:///home/bakdoolot/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/OUR%20SITE/bishkek.html"><i class="fa-brands fa-facebook"></i></a>
+				<a href="https://telegram.me/share/url?url=file:///home/bakdoolot/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/OUR%20SITE/bishkek.html"><i class="fa-brands fa-telegram"></i></a>
+				<a href="http://whatsapp.com/share.php?url=file:///home/bakdoolot/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/OUR%20SITE/bishkek.html"><i class="fa-brands fa-whatsapp"></i></a>
+			  </div>
+				<nav class="navbar navbar-light bg-light">
+				  <form class="form-inline">
+					<input class="form-control mr-sm-2" type="search"  aria-label="Search" style="width: 300px;">
+                  <a href="#" type="search"><i class="fa-solid fa-magnifying-glass"></i></a>
+				  </form>
+				</nav>
+			  <div class="langWarp" style="margin-left: 100px;">
+					<a href="#" language="english">EN</a>
+					<a href="#" language="russia">RU</a>
+					<a href="#" language="kyrgyz">KG</a>
+			  </div>
+			</nav>
+		</div>
+		<!-- Menu -->
+
+		<nav class="page__menu menu">
+			<ul class="menu__list r-list" style="margin-left: 100px;">
+			  <li class="menu__group"><a href="{% url 'home' %}" class="menu__link r-link text-underlined">Башкы-Бет</a></li>
+			  <li class="menu__group"><a href="{% url 'kitepter' %}" class="menu__link r-link text-underlined">Китептер</a></li>
+			  <li class="menu__group"><a href="{% url 'belgiluu-insandar' %}" class="menu__link r-link text-underlined">Белгилүү инсандар</a></li>
+			  <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">Биз жөнүндө</a></li>
+			</ul>
+		</nav>
+
+	<!-- Menu -->
+	</header>
+		<div class="img-text-body" style="margin: 20px; margin-left: 140px;">
+			<img src="data:image/jpeg;base64,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" width="200" height="200" style="">
+			<h1 style="margin-left: 210px; margin-top: -200px; position: absolute; font-size: 20px;">
+                Таттыбүбү Турсунбаева -
+                <small>
+                    1944-жылдын 12-июлунда Нарын облусунун Чаек кыштагында төрөлгөн. Жумгал районунун Чаек айылында орус орто мектепте окуган.
+                    1960-жылы 16 жашында "Салиманын ыры" аттуу кыска метраждуу тасмада биринчи жолу тартылган.
+                    17 жашында Ташкенттеги А.Н.Островсөрү институтунун "Драма жана кино актеру" факультетине тапшырган.
+                    1966-жылы Кыргыз мамлекеттик академиялык драма театрынын группасына кирген.
+                    Театрда дүйнөлүк жана советтик классикасынан У.Шекспир, Лопе де Вега, Г.Лорка, Ч.Айтматов, М.Карим жана Е.Шварцтын чыгармалары боюнча сахнага 30 дан ашуун эстен кеткис образдарды алып чыккан: Жульетта ("Ромео жана Жульетта"), Амелия ("Бернарда Альбанын үйү"), Фелисьяна ("Бий мугалими"), Асел ("Делбирим"), Анвар ("Фудзиямадагы кадыр түн") жана башкалар. Ошону менен бирге кинодо да жаркын элестерди жараткан.
+                    Кыргыз ССРинин эмгек сиңирген артисти, СССР кинематографисттер союзунун жана Кыргызстан кинематографисттер союзунун мүчөсү.
+                </small>
+            </h1>
+			<h5 style="position: absolute; margin-left: 40px; margin-top: 10px;">(1926-1958)</h5>
+            <p style="margin-top: 40px;">
+                Таттыбүбү Турсунбаева Кыргызстандын эң атактуу актрисасы болгон. Ал «сахнанын ханышасы» деп айтышчу. Таттыбүбү Турсунбаева кыргыздын көп кинолоруна катышып, кызыктуу каармандарды жараткан. Ал «Ак Мөөр», ролунда башкы каармандардын, ал эми «Кызыл алма» фильминде бейтааныш сулуунун ролун ойногон. "Ак Мөөр" фильминен соң Таттыбүбү Турсунбаеваны кыргыздар "Соң-Көл чүрөгү" деп аташкан. Ал 37 жашында бул дүйнөдөн кайткан. Ал көз жумганда, курсташы Жумабек Козукеев мүрзөсүнүн башында:
+
+                "Токтолуп сокпой жүрөгү,<br>
+
+                Соң-Көлдүн кетти чүрөгү"
+
+                деген ыр саптарын окуган. Кыргызстанда Таттыбүбүнү «ак куу» деп да айтышат, анткени кыргыз маданиятында ак куу эң эле татынакай жана назик куш. Ак куунун мойуну узун жана Таттыбүбүнүн дагы мойуну узун болгон. Буга байланыштуу мындай ыр бар: «Адашкан аркар сыяктуу, арманда кетти бир ак куу».
+                <br>
+                    <h5>Театрда ойногон негизги ролдору</h5>
+                <br>
+                    Асел - ("Кызыл жоолук жалжалым", авт. Ч.Айтматов, 1964-ж.)<br>
+                    Кар ханышасы - ("Кар ханышасы", авт.Е.Щварц, 1966-ж.)<br>
+                    Бьянка - ("Азоого чалма", авт.У.Шекспир, 1966-ж.)<br>
+                    Нази - ("Эрөөл", авт.М.Байжиев)<br>
+                    Бүбү- ("Осмонкул", авт.К.Маликов, 1969-ж.)<br>
+                    Төрөкан - ("Өлбөстүн үрөнү", авт.А.Токомбаев, 1969-ж.)<br>
+                    Гүлмайра - ("Жыгылган оогонго күлөт", авт.Т.Абдумомунов, 1969-ж.)<br>
+                    Лайлум - ("Ак боз ат", авт.Ш.Садыбакасов, 1972-ж.)<br>
+                    Эркеайым - ("Ак боз ат", авт.Ш.Садыбакасов)<br>
+                    Жульетта - ("Ромео менен Жульетта", авт.У.Шекспир, 1972-ж.)<br>
+                    Надя - ("Трибунал", авт.А.Макаенок, 1971-ж.)<br>
+                    Чолпон - ("Бийик жерде", авт.К.Маликов, 1972-ж.)<br>
+                    Мария - ("Мария", авт.А.Салынский, 1974-ж.)<br>
+                    Малика - ("Малика", авт.Т.Абдумомунов, 1976-ж.)<br>
+                    Шафак - ("Ай тутулган түндө", авт. М.Карим, 1973-ж.)<br>
+                    Зулайка - ("Байыркы жомок", авт.М.Байжиев, 1975-ж.)<br>
+                    Анвар - "Фудзиямадагы кадыр түн", авт. К.Мухаммеджанов, Ч.Айтматов, 1976-ж.)<br>
+                    Дездемона - ("Отелло", авт.У.Шекспир)<br>
+                    Амелия - ("Бернарда Альбанын үйү", авт.Г.Лорка, 1977-ж.)<br>
+                    Эльпи - ("Омар Хаямдын махабаты", авт.К.Мамбетакунов, 1981-ж.)<br>
+                    Мадина - ("Ар бир үйдө майрам", авт.М.Байжиев, 1977-ж.)<br>
+                    Батма - ("Танабай" спектакли, 1978-ж.)<br>
+                    Зулайда - ("Машырбек үйлөнөт", авт.Т.Абдумомунов, 1979-ж.)<br>
+                    Фелисьяна - ("Бий мугалими", авт.Лопе де Вега, 1981-ж.)<br><br>
+
+                    <h5>Фильмография</h5><br>
+
+                    1960-жыл - "Салиманын ыры"- Салима<br>
+                    1965-жыл - "Эң тил алчаак" - Айзада<br>
+                    1967-жыл - "Саманчынын жолу" - Жаш Толгонай<br>
+                    1968-жыл - "Ак-Мөөр" - Ак Мөөр<br>
+                    1971-жыл - "Отко таазим" - Уркуя<br>
+                    1973-жыл - "Ак куулар конгон айдың көл" - Зейнеп<br>
+                    1973-жыл - "Атадан калган туяк" - Жээнгүл<br>
+                    1974-жыл - "Сүйүү жаңырыгы" - Асия<br>
+                    1975-жыл - "Кызыл алма" - Бейтааныш сулуу<br>
+                    1977-жыл - "Арман" телефильминде эпизоддук роль<br>
+                    1978-жыл - "Июлдагы үч күн" тасмасында эпизоддук роль<br>
+                    1980-жыл - "Коңур күз" тасмасында эпизоддук роль<br>
+                    1979-жыл - "Процесс" - Зулайка<br><br>
+
+                    <h5>Радиодон аткарылып, "Алтын казынада" сакталган ырлары</h5> <br>
+
+                    "Гүлкайыр"<br>
+                    "Ай баратат"<br>
+                    "Жүрөктүн чогу өчө элек"<br>
+                    "Адамдар менин сүйгөнүм"<br>
+                    "Суу алган кыз"<br>
+                    "Ысык-Көлдүн ак куусу"<br>
+            </p>
+        </div>
+	<!-- Footer -->
+	<footer class="text-center text-lg-start bg-light text-muted">
+	  <!-- Section: Social media -->
+	  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+		<!-- Left -->
+		<div class="me-5 d-none d-lg-block">
+		  <span>Get connected with us on social networks:</span>
+		</div>
+		<!-- Left -->
+
+		<!-- Right -->
+		<div>
+		  <a href="" class="me-4 text-reset">
+			<i class="fab fa-facebook-f"></i>
+		  </a>
+		  <a href="" class="me-4 text-reset">
+			<i class="fab fa-twitter"></i>
+		  </a>
+		  <a href="" class="me-4 text-reset">
+			<i class="fab fa-google"></i>
+		  </a>
+		  <a href="" class="me-4 text-reset">
+			<i class="fab fa-instagram"></i>
+		  </a>
+		  <a href="" class="me-4 text-reset">
+			<i class="fab fa-linkedin"></i>
+		  </a>
+		  <a href="" class="me-4 text-reset">
+			<i class="fab fa-github"></i>
+		  </a>
+		</div>
+		<!-- Right -->
+	  </section>
+	  <!-- Section: Social media -->
+
+	  <!-- Section: Links  -->
+	  <section class="">
+		<div class="container text-center text-md-start mt-5">
+		  <!-- Grid row -->
+		  <div class="row mt-3">
+			<!-- Grid column -->
+			<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+			  <!-- Content -->
+			  <h6 class="text-uppercase fw-bold mb-4">
+				<i class="fas fa-gem me-3"></i>Company name
+			  </h6>
+			  <p>
+				Here you can use rows and columns to organize your footer content. Lorem ipsum
+				dolor sit amet, consectetur adipisicing elit.
+			  </p>
+			</div>
+			<!-- Grid column -->
+
+			<!-- Grid column -->
+			<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+			  <!-- Links -->
+			  <h6 class="text-uppercase fw-bold mb-4">
+				Products
+			  </h6>
+			  <p>
+				<a href="#!" class="text-reset">Angular</a>
+			  </p>
+			  <p>
+				<a href="#!" class="text-reset">React</a>
+			  </p>
+			  <p>
+				<a href="#!" class="text-reset">Vue</a>
+			  </p>
+			  <p>
+				<a href="#!" class="text-reset">Laravel</a>
+			  </p>
+			</div>
+			<!-- Grid column -->
+
+			<!-- Grid column -->
+			<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+			  <!-- Links -->
+			  <h6 class="text-uppercase fw-bold mb-4">
+				Useful links
+			  </h6>
+			  <p>
+				<a href="#!" class="text-reset">Pricing</a>
+			  </p>
+			  <p>
+				<a href="#!" class="text-reset">Settings</a>
+			  </p>
+			  <p>
+				<a href="#!" class="text-reset">Orders</a>
+			  </p>
+			  <p>
+				<a href="#!" class="text-reset">Help</a>
+			  </p>
+			</div>
+			<!-- Grid column -->
+
+			<!-- Grid column -->
+			<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+			  <!-- Links -->
+			  <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+			  <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+			  <p>
+				<i class="fas fa-envelope me-3"></i>
+				info@example.com
+			  </p>
+			  <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+			  <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+			</div>
+			<!-- Grid column -->
+		  </div>
+		  <!-- Grid row -->
+		</div>
+	  </section>
+	  <!-- Section: Links  -->
+
+	  <!-- Copyright -->
+	  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+		© 2021 Copyright:
+		<a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+	  </div>
+	  <!-- Copyright -->
+	</footer>
+	<!-- Footer -->
+</body>
+</html>

@@ -1,0 +1,202 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Жусуп Абдрахманов</title>
+	<link rel="shortcut icon"
+	href="{% static 'main/img/logo_burkut2.png' %}"
+	type="image/x-icon">
+</head>
+<link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<body>
+	<header>
+		<div>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light" id="header">
+				<a class="navbar-brand" href="{% url 'home' %}">
+					<img src="{% static 'main/img/logo_burkut.png' %}" width="100" height="70" class="logo">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="icons">
+				<a href="http://instagram.com/share.php?url=file:///home/bakdoolot/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/OUR%20SITE/bishkek.html"><i class="fa-brands fa-instagram"></i></a>
+				<a href="http://facebook.com/share.php?u=file:///home/bakdoolot/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/OUR%20SITE/bishkek.html"><i class="fa-brands fa-facebook"></i></a>
+				<a href="https://telegram.me/share/url?url=file:///home/bakdoolot/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/OUR%20SITE/bishkek.html"><i class="fa-brands fa-telegram"></i></a>
+				<a href="http://whatsapp.com/share.php?url=file:///home/bakdoolot/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/OUR%20SITE/bishkek.html"><i class="fa-brands fa-whatsapp"></i></a>
+			  </div>
+				<nav class="navbar navbar-light bg-light">
+				  <form class="form-inline">
+					<input class="form-control mr-sm-2" type="search"  aria-label="Search" style="width: 300px;">
+                  <a href="#" type="search"><i class="fa-solid fa-magnifying-glass"></i></a>
+				  </form>
+				</nav>
+			  <div class="langWarp" style="margin-left: 100px;">
+					<a href="#" language="english">EN</a>
+					<a href="#" language="russia">RU</a>
+					<a href="#" language="kyrgyz">KG</a>
+			  </div>
+			</nav>
+		</div>
+		<!-- Menu -->
+
+		<nav class="page__menu menu">
+			<ul class="menu__list r-list" style="margin-left: 100px;">
+			  <li class="menu__group"><a href="{% url 'home' %}" class="menu__link r-link text-underlined">Башкы-Бет</a></li>
+			  <li class="menu__group"><a href="{% url 'kitepter' %}" class="menu__link r-link text-underlined">Китептер</a></li>
+			  <li class="menu__group"><a href="{% url 'belgiluu-insandar' %}" class="menu__link r-link text-underlined">Белгилүү инсандар</a></li>
+			  <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">Биз жөнүндө</a></li>
+			</ul>
+		</nav>
+
+	<!-- Menu -->
+	</header>
+		<div class="img-text-body" style="margin: 20px; margin-left: 140px;">
+			<img src="data:image/jpeg;base64,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" width="200" height="200" style="">
+			<h1 style="margin-left: 210px; margin-top: -200px; position: absolute; font-size: 20px;">
+                Жусуп Абдрахманов - <small>Көрүнүктүү мамлекеттик жана коомдук ишмер Жусуп Абдрахман уулу 1901-жылдын 28-декабрында Каракол уездинин Күңгөй-Аксуу болуштугундагы Чиркей айылында төрөлгөн. Атасы - Абдрахман Балапан уулу - манап, бий жана 3 жыл болуш болуп, 1916-жылдагы көтөрүлүшкө катышкан, ошол жылы келтеден өлгөн. Энеси жана 7 бир тууганы Нарында казак-орустар тарабынан көтөрүлүштү басууда өлтүрүлгөн. Жусуп иниси Токо экөө томолой жетим калышкан.
+                1912-15-жылдарда Сазановка кыштагында орус-тузем мектебин окуп бүтүрөт, андан кийин Каракол шаардык жогорку-башталгыч окуу жайынан окуйт. 1916-жылы эл менен бирге Кытайга качып барып келүүгө аргасыз болот. Кайра келгенден кийин орусча билген 16 жашар тири карак өспүрүм Каракол гарнизонунда атбагар болот. 1918-жылдан баштап коомдук ишке аралашат. Кызыл Армияга жазылып, бир жылга жетпеген убакта катардагы жоокерден эскадрондун командирлигине чейи көтөрүлөт.
+                Адегенде 1919-жылы Верныйдагы(жеткиликсиз шилтеме) командирлик курстан, андан кийин Ташкендеги аскердик жогорку мектептен окуйт. 1918-19-жылдарында түндүк Жети-Суу фронтунда ак казактар менен салгылашат. Ден соолугуна байланыштуу демобилизацияланып кетпегенде, Жусуптан көрүнүктүү аскер начальниги өсүп чыгышы да мүмкүн эле.1919-жылдан баштап ал партиялык-советтик курулушка баш-оту менен киришет.</small>
+            </h1>
+			<h5 style="position: absolute; margin-left: 40px; margin-top: 10px;">(1901-1938)</h5>
+            <p style="margin-top: 40px;">Жусуп Абдрахманов Кыргыз мамлекетин түптөгөндөрдүн башында болуп, аны түзүлүшүнө жана калыптанышына негиз салган. 1920-жылы ВЛКСМ дын III- cъездине катышып, ошол жерде В.И. Ленин (Ульянов) менен президиумда отуруп, аны менен бирге иштешкен. 1924-жылга чейин Жети-Суу аймагында жооптуу партиялык-советтик кызматтарда иштеп турат.
+            1924-жылы Туркестан Компартиясынын БКсы тарабынан уюштурулган “Улуттук оргбюронун” председатели болуп, Кыргыз автоном областын түзүүнү ишке ашырат. 1924-1925-жылдарда ВКП (б)нын 1-секретарынын милдетин аткарып, анан 2-секретары болуп турат. Кыргызстандын азыркы чектери Абдрахманов тарабынан аныкталганы белгилүү. Элдин өз эгемендигин өзү чечиш керектигин жетекчиликке алган Абдрахман уулу тилектештери Абдыкерим Сыдык уулу, Ишеналы Арабай уулудар жана каракалпактын мыкты уулдары менен бирге, Туркестан АССРинин курамында борбору Жалал-Абадда болгон, Ысык-Көлдөн Арал деңизине чеййин созулган Каракыргыз-Каракалпак автономиясын түзүү идеясы менен чыгат. Албетте, бул идея ишке ашпай калган. Абдрахмановдун аракети менен, адегенде РСФСРдын(жеткиликсиз шилтеме) курамындагы автономиялык область, андан кийин автономиялык республика болгон Кыргызстан өз эгемендигин алгыча СССРдин курамында союздук республика болуп турду. Ал эми адегенде Казакстандын, андан кийин Өзбекстандын курамындагы Каракалпакстан автономия бойдон эле калганын билебиз.
+            1926-жылдын 1-февралында Кыргыз автономиялык ССРинин түзүлүшү да анын тынымсыз аракети менен ишке ашкан. Абдрахманов дайыма Кыргызстандын ОСФСРдын курамындагы автономиялык область болуу менен чектелбестен, өз алдынча республика болушуна толук негиз бар экендигин далилдеп келген болучу.
+            1925-жылы Маскөөгө ВКП (б)га кызматка чакырылып, борбордук аппаратта жооптуу инструктор болуп иштейт. ВКП (б)нын баштапкы уюмунун секретары катары, жыйналышка кечигип келген И.В.Сталинге(жеткиликсиз шилтеме) эскертүү бергени Абдрахмановдун кандай тайманбас, иш билги кадр экенинен кабар берип турат. Ал Москвада иштеп турганда “Күмүш кылымдын” (“Серебряный век”) көп акын-жазуучулары В. Маяковский, М. Булгаков, Б.Кушнер(жеткиликсиз шилтеме), А. Ахматовалар менен жакшы санаалаш мамиледе болгондугу Жусуптун мамлекеттик ишмер гана эмес, жан дүйнөсү бай өзгөчө инсандыгынан кабар берип турат. Бул мамиле кыйла жылдар бою уланып келген. Бул чөйрөдө жүргөндө жана инструктор болуп иштеп турганда жаш совет мамлекетинин көп кеңештик-партиялык, аскердик жана көркөм өнөр ишмерлери менен тааныш болгон. Бул сыяктуу тааныштыктары кийин 1927-32-жылдарда Жусуп Кыргыз республикасынын Совнаркомунун председатели болуп иштеп турган кезинде көп маселелердин тез чечилишине өбөлгө түзөт.
+            Бул иште Абдрахман уулу 5 жыл чымырканып иштеп, жаңы гана түзүлгөн жана мурда эчтекеси болбогон жаш республикада бардык жумушту нөлдөн баштайт; эл чарбасынын бардык тармактарын, баарынан мурда, айыл чарбалык жана өнөр жайлык комплексти түзүүнүн, билим берүү тармагын, сот-прокуратураны, милицияны ж.у.с. жаңыдан түзүүнүн башында турат. Бул жагынан да Жусуп Абдрахманов менен Ли Куан Ю окшош. 1931-32-жылдарда дан даярдоодо Украина, Волга бою жана Казакстан элге ныпым эч нерсе калтырбай данды ортого төгүп бергендиктен, бул аймактарда чоң ачарчылык болуп, миллиондогон адамдар ачкадан өлгөндүгү белгилүү.
+            Абдрахман уулудун принциптүү, адамгерчиликтүү позициясы менен 1932-жылы дан өз керектөөлөр үчүн да калтырылып, Кыргызстанда ачарчылык болгон эмес. Ал тургай ачкасынан тентиген көп казактар бул жакка келип, кыргыз элинин арасында аман калганын билебиз. Ушул эрдиги үчүн Абдрахманов кызматтан алынып, партиядан чыгарылат. Досу В.Шубриковдун(жеткиликсиз шилтеме) (РКП(б)нын Средневолжск крайкомунун 1-секретары болгон, мурда Киробкомдун 1-секретары болуп иштеген) чакыруусу менен Урал тарапка кетип, Самарада, Оренбургда крайлык, областтык аткаруу комитеттеринде жооптуу чарбалык кызматтарда 1937-жылга чейин иштеп турат.
+            Ж.Абдрахман уулу 1927-жылдын 12-мартында 26 жашында Кыргыз АССРинин эл комиссарлар Советинин председатели болуп дайындалган. Республиканын өкмөтүнүн башында турган кезинде өзгөчө тайманбас, борбордун көзүн карабаган саясат жүргүзөт. Сталинге эки жолу (1929-жылдын ноябры, 1930-жылдын апрели) жазган каттарында республиканы үч жерге (союздук борборго, РСФСРге жана СредАзбюрого) баш ийдирген туура эмес практиканы жоюп, Кыргыз АССРин союздук республикага айландыруу маселесин эки жолу кайталап коёт. Кийин Жусуп камалганда так ушунусу улутчулдук деп бааланган болучу.
+            Жапырт колхоздошуу башталганда эле, 1930-жылы, Кыргызстанда мал чарбачылыгы чоң бүлгүнгө учурап, малдын башы 10,4 пайызга кемигени белгилүү. Ал эми Абдрахман уулу болсо өзү иштеп турган жылдары ошондогу борбордун жана жергиликтүү чоңдордун каршылыгына карабастан, кооперация идеясын көтөрүп жана аны колунан келишинче ишке ашырууга (Интергельпо) аракеттенип келген. Ошондой эле, Абдрахман уулу көчмөн калкты чукулунан отурукташтырууга да каршы болот (1930-жылы өлкөдө 85 көчмөн жана жарым көчмөн жеке чарба болгон, Жусуп Кыргызстан Советтеринин III съездинде катуу туруп, отурукташтыруу планын 30 миңден реалдуу 8 миңге азайттырат). Жусуп ошондой эле жергиликтүү шартты билбеген москвалык десанттын сабатсыз иштери менен дагы, жергиликтүү жетекчилердин иш билбестиги жана келишүүчүлүгү менен дагы дайыма аёосуз күрөшүп келген.
+            Кыргыз тилинин ролун жогорулатуу, улуттук кадрларды даярдоо жана кызматка коюу, өлкөнү индустриализациялоо дайыма Ж.Абдрахман уулудун көңүлүнүн чордонунда болгон. Мамлекеттик жана саясий ишмер катары ал элдин кызыкчылыгын биринчи орунга койгон жана бул максатка жетиш үчүн бардык энергиясын, акылын, күчүн, уюштуруучулук талантын, ал эмес өз өмүрүн дагы аяган эмес.
+            Адегенде Троцкий, андан кийин Сталин алып көтөргөн «сверхиндустриализация» идеясын Жусуп жактырган эмес. Кыргызстанда биринчи кезекте өнүктүрүүгө традициялуу шарттары болгон устачылыкты, жеңил тамак-аш жана кайра иштетүү өнөр жайларын, өнөр жай кооперациясын, тоо-кен өндүрүшүн өнүктүрүү керектигин айткан. Кыргызстанды индустриализациялоо үчүн биринчи кезекте, көп сандуу улуттук жумушчу табын окутуп-тарбиялап түзүү, шаар-кыштактарды, жолдорду жана байланышты куруу керектигин дайыма кайталайт жана колунан келишинче ишке ашырууга аракеттенет. Ж.Абдрахман уулудун Кыргызстанда ээлеген кызматтарынан башка аткарган жумуштарын айта кетели: ОКФСР ВЦИКтин мүчөсү, КСРБ ЦИК Президиумунун мүчөлүгүнө кандидат, ЦК ВКП(б)нын Орто-Азия бюросунун мүчөлүгүнө кандидат, ВКП(б)нын борбордук аппаратында жооптуу инструктор.
+            1937-жылдагы чоң калайманда Жусуп камакка алынат, ага антикеңештик террористтик, диверсиялык-чыккынчы, оңчул троцкисттик уюм менен блоктошкон Социал-Туран партиясынын түзүүчүсү деген күнөө коюлат. Ага саясий айыптарды тагууда органдар Абдрахмановдун дайыма жазып жүргөн күндөлүгүнө таянышкандыгы белгилүү. Кыргызстанда совет бийлигин кулатып, КСРБден бөлүп өзүнчө мамлекет түзмөкчү болгон деген сандырак айып тагылат. Канчалык кыйнаса да Жусуп өзүнө коюлган күнөөлөрдү мойнуна албаган. Анткени, Жусуп борбордогу жана Кыргызстандагы партиялык-советтик ишмерлерди канчалык аёосуз сындаса да, советтик түзүлүштүн активдүү жарчысы жана куруучусу болгон.
+            1960-жылдары дүйнөдөн өткөн белгилүү котормочу С.Бектурсуновдун айтуусу боюнча Абдрахман уулудун акыркы күндөрү айкын болду. Ал киши дагы суракта болуп, Абдрахман уулу бир дагы күнөөнү мойнуна албастан, өзүн эр жүрөктүк жана ишенимдүүлүк менен бекем кармагандыгын жана эч кимди каралабагандыгын өз көзү менен көргөн. Жусупту сындырыш үчүн, аны каралап кол коюп беришкен Ибрай Тойчинов(жеткиликсиз шилтеме) жана Баялы Исакеев менен беттештиришкенде, Исакеевдин канжалаган башын жөлөп, столдогу сууну алып бети-башын жууп, жаратын таңып берген экен. Ушул аракети анын эрдигин, абийир, ар-намысты баарынан жогору койгон кашкөйлүгүн, кек санабаган айкөлдүгүн көрсөтүп турбайбы. Мунусу үчүн Жусуп абдан токмок жейт.
+            1938-жылдын 5-ноябрында суракка чакырылган Абдрахманов тергөөчүнүн чылым чегип, ром ичип отурганын көрөт. Чылымынан алып чегип, ромдон куйдуруп ичип туруп, анан баягы ашмалтай суроолорун берип, кайра суракка алмакчы болгон тергөөчүнү отургуч менен башка урат. Жүгүрүп келген сакчылар Жусупту атып ташташат. Кыргыздын эр жүрөк уулу Жусуп Абдрахманов ошентип каза табат.</p><br><br>
+		</div>
+	<!-- Footer -->
+	<footer class="text-center text-lg-start bg-light text-muted">
+	  <!-- Section: Social media -->
+	  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+		<!-- Left -->
+		<div class="me-5 d-none d-lg-block">
+		  <span>Get connected with us on social networks:</span>
+		</div>
+		<!-- Left -->
+
+		<!-- Right -->
+		<div>
+		  <a href="" class="me-4 text-reset">
+			<i class="fab fa-facebook-f"></i>
+		  </a>
+		  <a href="" class="me-4 text-reset">
+			<i class="fab fa-twitter"></i>
+		  </a>
+		  <a href="" class="me-4 text-reset">
+			<i class="fab fa-google"></i>
+		  </a>
+		  <a href="" class="me-4 text-reset">
+			<i class="fab fa-instagram"></i>
+		  </a>
+		  <a href="" class="me-4 text-reset">
+			<i class="fab fa-linkedin"></i>
+		  </a>
+		  <a href="" class="me-4 text-reset">
+			<i class="fab fa-github"></i>
+		  </a>
+		</div>
+		<!-- Right -->
+	  </section>
+	  <!-- Section: Social media -->
+
+	  <!-- Section: Links  -->
+	  <section class="">
+		<div class="container text-center text-md-start mt-5">
+		  <!-- Grid row -->
+		  <div class="row mt-3">
+			<!-- Grid column -->
+			<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+			  <!-- Content -->
+			  <h6 class="text-uppercase fw-bold mb-4">
+				<i class="fas fa-gem me-3"></i>Company name
+			  </h6>
+			  <p>
+				Here you can use rows and columns to organize your footer content. Lorem ipsum
+				dolor sit amet, consectetur adipisicing elit.
+			  </p>
+			</div>
+			<!-- Grid column -->
+
+			<!-- Grid column -->
+			<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+			  <!-- Links -->
+			  <h6 class="text-uppercase fw-bold mb-4">
+				Products
+			  </h6>
+			  <p>
+				<a href="#!" class="text-reset">Angular</a>
+			  </p>
+			  <p>
+				<a href="#!" class="text-reset">React</a>
+			  </p>
+			  <p>
+				<a href="#!" class="text-reset">Vue</a>
+			  </p>
+			  <p>
+				<a href="#!" class="text-reset">Laravel</a>
+			  </p>
+			</div>
+			<!-- Grid column -->
+
+			<!-- Grid column -->
+			<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+			  <!-- Links -->
+			  <h6 class="text-uppercase fw-bold mb-4">
+				Useful links
+			  </h6>
+			  <p>
+				<a href="#!" class="text-reset">Pricing</a>
+			  </p>
+			  <p>
+				<a href="#!" class="text-reset">Settings</a>
+			  </p>
+			  <p>
+				<a href="#!" class="text-reset">Orders</a>
+			  </p>
+			  <p>
+				<a href="#!" class="text-reset">Help</a>
+			  </p>
+			</div>
+			<!-- Grid column -->
+
+			<!-- Grid column -->
+			<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+			  <!-- Links -->
+			  <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+			  <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+			  <p>
+				<i class="fas fa-envelope me-3"></i>
+				info@example.com
+			  </p>
+			  <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+			  <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+			</div>
+			<!-- Grid column -->
+		  </div>
+		  <!-- Grid row -->
+		</div>
+	  </section>
+	  <!-- Section: Links  -->
+
+	  <!-- Copyright -->
+	  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+		© 2021 Copyright:
+		<a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+	  </div>
+	  <!-- Copyright -->
+	</footer>
+	<!-- Footer -->
+</body>
+</html>

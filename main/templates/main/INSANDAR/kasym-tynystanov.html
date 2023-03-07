@@ -1,0 +1,219 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Касым Тыныстанов</title>
+	<link rel="shortcut icon"
+	href="{% static 'main/img/logo_burkut2.png' %}"
+	type="image/x-icon">
+</head>
+<link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<body>
+	<header>
+		<div>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light" id="header">
+				<a class="navbar-brand" href="{% url 'home' %}">
+					<img src="{% static 'main/img/logo_burkut.png' %}" width="100" height="70" class="logo">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="icons">
+				<a href="http://instagram.com/share.php?url=file:///home/bakdoolot/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/OUR%20SITE/bishkek.html"><i class="fa-brands fa-instagram"></i></a>
+				<a href="http://facebook.com/share.php?u=file:///home/bakdoolot/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/OUR%20SITE/bishkek.html"><i class="fa-brands fa-facebook"></i></a>
+				<a href="https://telegram.me/share/url?url=file:///home/bakdoolot/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/OUR%20SITE/bishkek.html"><i class="fa-brands fa-telegram"></i></a>
+				<a href="http://whatsapp.com/share.php?url=file:///home/bakdoolot/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/OUR%20SITE/bishkek.html"><i class="fa-brands fa-whatsapp"></i></a>
+			  </div>
+				<nav class="navbar navbar-light bg-light">
+				  <form class="form-inline">
+					<input class="form-control mr-sm-2" type="search"  aria-label="Search" style="width: 300px;">
+                  <a href="#" type="search"><i class="fa-solid fa-magnifying-glass"></i></a>
+				  </form>
+				</nav>
+			  <div class="langWarp" style="margin-left: 100px;">
+					<a href="#" language="english">EN</a>
+					<a href="#" language="russia">RU</a>
+					<a href="#" language="kyrgyz">KG</a>
+			  </div>
+			</nav>
+		</div>
+		<!-- Menu -->
+
+		<nav class="page__menu menu">
+			<ul class="menu__list r-list" style="margin-left: 100px;">
+			  <li class="menu__group"><a href="{% url 'home' %}" class="menu__link r-link text-underlined">Башкы-Бет</a></li>
+			  <li class="menu__group"><a href="{% url 'kitepter' %}" class="menu__link r-link text-underlined">Китептер</a></li>
+			  <li class="menu__group"><a href="{% url 'belgiluu-insandar' %}" class="menu__link r-link text-underlined">Белгилүү инсандар</a></li>
+			  <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">Биз жөнүндө</a></li>
+			</ul>
+		</nav>
+
+	<!-- Menu -->
+	</header>
+		<div class="img-text-body" style="margin: 20px; margin-left: 140px;">
+			<img src="data:image/jpeg;base64,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" width="200" height="200" style="">
+			<h1 style="margin-left: 210px; margin-top: -200px; position: absolute; font-size: 20px;">
+                Касым Тыныстанов -
+            <small>
+                10-сентябрь 1901-жылы, азыркы Ысык-Көл району, Чырпыкты кыштагы ― 6-ноябрь туулган.Алгачкы билимди диний мектептен алган, шаардык (Каракол) орус жергиликтүү мектебинде агартуу институтунда окуган. «Эркин Тоо» гезитинин жооптуу редактору болуп иштеген. 1927-1930-жылдары Кыргыз АССРнин эл агартуу комиссары. 1928-жылында «Жаңы маданият жолунда» журналды уюштурууга катышып 1931-жылга чейин анын жооптуу редактору болгон. 1931-1937-жылдары ― Кыргыз маданият курулуш институтунда илимий кызматкер, сектор башчысы, мүдүрдүн милдетин аткаруучу, ошол эле учурда Кыргыз педагогикалык институтунда окутуучу.
+
+                1938-жылы куугунтуктар учурунда «эл душманы» деген наамга коюлуп, атылып өлтүрүлгөн.
+
+                Касым кыргыз жазма адабиятын жана илимий тил таанууну баштоочулардын бири. Кыргыздын улуттук жазуусун иштеп чыгууга, асыресе араб алфавитин кыргыз тилине ылайыкташтыруу, араб алфавитин латынча, латынчаны орус алфавитине алмаштыруу иштерине катышкан.Азыркы кыргыз орфографиясынын негизги принциптерин иштеп чыгып, кыргыз тилинде туңгуч окуу китептерин, кыргыз тилинин туңгуч грамматикасын жана тил илими боюнча кыргызча терминологияны түзгөн.
+            </small>
+            </h1>
+			<h5 style="position: absolute; margin-left: 40px; margin-top: 10px;">(1901-1938)</h5>
+            <p style="margin-top: 40px;">
+                Касым адегенде казакча, кийин кыргызча жазган ырлары Алматы жана Ташкент те казакча чыгуучу газета-журналдарга жарыяланып, 1925 жылы «Касым ырларынын жыйнагы» деген ат менен Москвада жарык көргөн.Касым - туңгуч көркөм котормочу. Ал «Интернационалды», И.А. Крыловдун тамсилдерин биринчи жолу кыргызчалаткан. Орус революциячыл ырларын "Өзгөрүштүн ырлары" деген ат менен которуп, кичине китеп кылып чыгарган. Касым кыргыз элинин оозеки чыгармаларын, асыресе "Манас" эпосун жыйноого зор көнүл бөлүп, бул темада атайын макалалар жазган, уюштуруу иштерин жүргүзгөн. Мисалы, улуу манасчы Саякбай Каралаев уулунун айтуусундагы "Манас" үчилтигин толук жазып алуунун демилгечиси жана уюштуруучусу болгон. "Манас" эпосун орусчага которуу ишине катышкан. Касым Тыныстанов 1901-жылдын 10-сентябрында Ысык-Кѳл районунун Чырпыкты айылында туулган. Ата-энесинин тек–жайы, турмуштук абалы жөнγндө так маалымат жок. К. Тыныстанов жөнγндө жазылган макалаларда анын кедей үй-бγлѳдѳн чыккандыгы айтылса, кээ бир изилдѳѳчγлѳр атасын оокаттуу адамдардын катарына кошушат. К. Тыныстанов 1909-1912-жылдарда Чырпыктыда мусулман мектебинде окуп , андан кийин Сазановка айылындагы ѳзбек медресесине кирет. 1914-1916-жылдары Караколдогу орус-тузем мектебинде окуган. 1916-жылы Үркγн учурунда эл менен Кытайга качат. Ал Кытайда кандай жашоо ѳткѳргѳндγгγ тууралуу маалымат жок. 1918-жылы гана кайтып келип кѳл башындагы Тепке айылында таякелериникинде туруп калган. Тепке айылында жγргѳндѳ ыр дагы чыгара баштаган. 1919-жылы Ташкентге келип, Казак-кыргыз агартуу институтунун даярдоо бѳлγмγнѳ алынган. 1920-жылы Кыргыз агартуу институтунун 1-курсуна кабыл алынган. Ишмердик жолу
+
+                К.Тыныстановдун ишмердик жолу институтта окуп жγргѳн кезинде эле башталган. Ал 1920-1924-жылдары «Өрис», «Ак-Жол» гезиттеринде, «Жас Кайрат», «Сана» журналдарында кызматкер болгон. 1925-жылы Кыргыз автономиялуу облусунун Академиялык Борборунун Кыргыз бѳлγмγнγн катчылыгына дайындалат. Ал кызматта 1926-жылга чейин иштеп, ошол эле убакта «Эркин-Тоо» гезитинин жооптуу редакторунун милдетин да аткарган. 1927-жылы Кыргыз Автономиялуу Республикасынын Эл Агартуу Комиссары болуп дайындалып, γч жыл эмгектенген. Ушул эле убакта «Жаны маданият» журналынын редактору, 1930-37-жылдарда Кыргыз маданият курулуш институтунда илимий кызматкер, 3 ай анын жетекчиси кызматын аркалаган. Кыргыз педагогикалык институтунда лекция окуган. Тыныстанов Кыргыз ССРиндеги 1932-жылы доценттик, 1936-жылы профессорлук наамын алган алгачкы адам.
+                Илимий ишмердиги жана чыгармачылыгы.
+
+                К.Тыныстанов адегенде араб тамгасын колдоп, кийин латын тамгасына, андан орус тамгасына ѳтүүгѳ алгачкылардан болуп үндѳгѳнүн замандаштары эскерет. «Эркин-Тоо» гезитинин 1926-жылкы 8-апрелдеги санында анын «Баку калаасында боло турган тγркология съезди жана анын кадыры» деген макаласы басылып, ал курултайда ѳзγ тγзгѳн латын алфавитинин долбоору боюнча баяндама жасаган.
+
+                Бул мезгилде жергебизде жаны мектептердин массалык тγрдѳ ачылышы да анын чыгармачылыгынын гγлдѳп турган учуруна туш келди. Ал мектептер γчγн эне тилибизде окуу китептери тγзγлγшγ зарыл эле.
+
+                Дал ушул маанилγγ маселени чечγγнγ Касым жарандык-атуулдук милдетим деп эсептеп, окуулуктарды тγзγп,кураштырууга биротоло отурат.
+
+                1924-жылы «Окуу китебин» тγзγп ,1926-жылы «Чондор γчγн алиппе» , 1927-жылы «Эне тилибиз» , 1933-жылы «Социалдык-экономикалык сѳздγк» , 1934-жылы «Кыргыз тилинин морфологиясын» 1936-жылы «Кыргыз тилинин синтаксисин» жаратты.
+
+                Ошондой эле «Эне тили» , «Жаны айыл» , «Кыргыз адабий тилинин жаны долбоору» ,«Жаны алфавит тγзγγнγн жаны принциптери», «Биздин тил» ж.б. макала , эмгектерин жазды. 37-жылдык ѳмγрγнγн кѳп бѳлγгγн мамлеккетик жумуштарга арнаган К.Тыныстанов кѳркѳм чыгарма жазууга убактысы аз болгон . Ошондой болсо дагы Ташкентте окуп жγргѳндѳ «θрис» , «Жаны ѳрис» гезиттеринде бир нече казакча ырлары жарык кѳргѳн . Анын биринчи ѳз эне тилинде жазылган ыры «Ала-Тоо» 1922-жылы жазылган . Ал поезия менен гана эмес , проза менен дагы алектенип , «Жас кайрат» журналынын тѳрт санына «Мариям менен кѳл боюнда» деген кѳлѳмдγγ ангемеси «Келгин» деген ат менен жарыкка чыккан. 1925-жылы Москвадан чыккан «Касым ырларынын жыйнагы »акындын 1919-1924-жылдары жазылган бардык ырларынан куралаган.Ага удаа поэзиялык котормолор топтому «θзгѳрγш ырлар »деген ат менен Фрунзеде жазылды .Анын бул жыйнагына казак тилиндеги он эки , кыргыз тилиндеги жыйырма бир ыры жана «Жаныл Мырза» поэмасы кирген. К.Тыныстановдун жетекчилиги менен У.Абдукаимов , К.Карасаев , Т. Саманчин «Манастын» «Чон казат» бѳлγгγн сапма-сап которушкан. «Академия кечелери »пьесалар тγрмѳгγндѳ «Алмамбет менен Чубактын жол талашканы »жана «Yргѳнчтγн жээгинде Айчγрѳктγн кырк кыз менен турушу» деген эки кѳрγнγш жазылган.
+                К.Тыныстановдун куугунтукка алынышы
+
+                Касым жаш кезинде кургак учук менен ооруган, бул оорусу 30-жылдардын башында козголгон, дарыгерлердин жардамы менен айыгып жаны эле иштей баштаганда ага «эл душманы» деген жала жабылып, жашоосундагы оор кγндѳр башталган . «Академиялык кечелер» театрга коюлуп башталганда 1933-жылдын 24-февралындагы жана 6-мартындагы «Кызыл Кыргызстан» гезитинин сандарында А.Токомбаевдин «Академиялык кечеси тууралуу» жана «Академиялык кеченин тыянагы» деген эки макаласы жарык кѳргѳн. Бул макалаларда Касымга карата сындар айтылган .К.Тыныстановду улутчул, панисламизм, пантγркизм идеяларына сугарылган деп анын «Касым ырлар жыйнагы», «Академиялык кечелер» чыгармаларынын мазмунуна карап гана кγнѳѳлѳбѳстѳн, жаш кезинде алаш ордочулар менен идеялаш болгон деп дагы кγнѳѳ коюшкан.
+
+                1937-жылы Москвадан чакыртылып, эч себепсиз партиядан чыгарылып,1-августта камалган.
+
+                1938-жылдын 5-ноябрында СССР Жогорку Аскер сотунун жабык кѳчмѳ сессиясында К.Тыныстановго 1921-жылдан тартып улутчул «Алаш-Ордо» уюмуна, андан кийин буржуазиячыл-улутчул, диверсиялык зыянкеч , «Социалдык –Туран» партиясынын жетекчилик тобуна кирген деген кγнѳѳ менен коюлуп, атууга ѳкγм кылынган. θкγм тез аткарылып 7-ноябрда атылган.
+
+                1956-жылы аялы Турдубγбγ тиешелγγ органдарга кайрылып, 1957-жылы СССРдин Жогорку Аскердик соту 1938-жылдын 5-ноябрындагы чечимин жокко чыгарган. 1958-жылы 22-январда аны партиялык жактан акталган .
+            </p>
+        </div>
+	<!-- Footer -->
+	<footer class="text-center text-lg-start bg-light text-muted">
+	  <!-- Section: Social media -->
+	  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+		<!-- Left -->
+		<div class="me-5 d-none d-lg-block">
+		  <span>Get connected with us on social networks:</span>
+		</div>
+		<!-- Left -->
+
+		<!-- Right -->
+		<div>
+		  <a href="" class="me-4 text-reset">
+			<i class="fab fa-facebook-f"></i>
+		  </a>
+		  <a href="" class="me-4 text-reset">
+			<i class="fab fa-twitter"></i>
+		  </a>
+		  <a href="" class="me-4 text-reset">
+			<i class="fab fa-google"></i>
+		  </a>
+		  <a href="" class="me-4 text-reset">
+			<i class="fab fa-instagram"></i>
+		  </a>
+		  <a href="" class="me-4 text-reset">
+			<i class="fab fa-linkedin"></i>
+		  </a>
+		  <a href="" class="me-4 text-reset">
+			<i class="fab fa-github"></i>
+		  </a>
+		</div>
+		<!-- Right -->
+	  </section>
+	  <!-- Section: Social media -->
+
+	  <!-- Section: Links  -->
+	  <section class="">
+		<div class="container text-center text-md-start mt-5">
+		  <!-- Grid row -->
+		  <div class="row mt-3">
+			<!-- Grid column -->
+			<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+			  <!-- Content -->
+			  <h6 class="text-uppercase fw-bold mb-4">
+				<i class="fas fa-gem me-3"></i>Company name
+			  </h6>
+			  <p>
+				Here you can use rows and columns to organize your footer content. Lorem ipsum
+				dolor sit amet, consectetur adipisicing elit.
+			  </p>
+			</div>
+			<!-- Grid column -->
+
+			<!-- Grid column -->
+			<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+			  <!-- Links -->
+			  <h6 class="text-uppercase fw-bold mb-4">
+				Products
+			  </h6>
+			  <p>
+				<a href="#!" class="text-reset">Angular</a>
+			  </p>
+			  <p>
+				<a href="#!" class="text-reset">React</a>
+			  </p>
+			  <p>
+				<a href="#!" class="text-reset">Vue</a>
+			  </p>
+			  <p>
+				<a href="#!" class="text-reset">Laravel</a>
+			  </p>
+			</div>
+			<!-- Grid column -->
+
+			<!-- Grid column -->
+			<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+			  <!-- Links -->
+			  <h6 class="text-uppercase fw-bold mb-4">
+				Useful links
+			  </h6>
+			  <p>
+				<a href="#!" class="text-reset">Pricing</a>
+			  </p>
+			  <p>
+				<a href="#!" class="text-reset">Settings</a>
+			  </p>
+			  <p>
+				<a href="#!" class="text-reset">Orders</a>
+			  </p>
+			  <p>
+				<a href="#!" class="text-reset">Help</a>
+			  </p>
+			</div>
+			<!-- Grid column -->
+
+			<!-- Grid column -->
+			<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+			  <!-- Links -->
+			  <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+			  <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+			  <p>
+				<i class="fas fa-envelope me-3"></i>
+				info@example.com
+			  </p>
+			  <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+			  <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+			</div>
+			<!-- Grid column -->
+		  </div>
+		  <!-- Grid row -->
+		</div>
+	  </section>
+	  <!-- Section: Links  -->
+
+	  <!-- Copyright -->
+	  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+		© 2021 Copyright:
+		<a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+	  </div>
+	  <!-- Copyright -->
+	</footer>
+	<!-- Footer -->
+</body>
+</html>

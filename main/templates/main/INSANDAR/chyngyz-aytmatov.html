@@ -1,0 +1,289 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Чыңгыз Атматов</title>
+	<link rel="shortcut icon"
+	href="{% static 'main/img/logo_burkut2.png' %}"
+	type="image/x-icon">
+</head>
+<link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<body>
+	<header>
+		<div>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light" id="header">
+				<a class="navbar-brand" href="{% url 'home' %}">
+					<img src="{% static 'main/img/logo_burkut.png' %}" width="100" height="70" class="logo">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="icons">
+				<a href="http://instagram.com/share.php?url=file:///home/bakdoolot/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/OUR%20SITE/bishkek.html"><i class="fa-brands fa-instagram"></i></a>
+				<a href="http://facebook.com/share.php?u=file:///home/bakdoolot/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/OUR%20SITE/bishkek.html"><i class="fa-brands fa-facebook"></i></a>
+				<a href="https://telegram.me/share/url?url=file:///home/bakdoolot/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/OUR%20SITE/bishkek.html"><i class="fa-brands fa-telegram"></i></a>
+				<a href="http://whatsapp.com/share.php?url=file:///home/bakdoolot/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/OUR%20SITE/bishkek.html"><i class="fa-brands fa-whatsapp"></i></a>
+			  </div>
+				<nav class="navbar navbar-light bg-light">
+				  <form class="form-inline">
+					<input class="form-control mr-sm-2" type="search"  aria-label="Search" style="width: 300px;">
+                  <a href="#" type="search"><i class="fa-solid fa-magnifying-glass"></i></a>
+				  </form>
+				</nav>
+			  <div class="langWarp" style="margin-left: 100px;">
+					<a href="#" language="english">EN</a>
+					<a href="#" language="russia">RU</a>
+					<a href="#" language="kyrgyz">KG</a>
+			  </div>
+			</nav>
+		</div>
+		<!-- Menu -->
+
+		<nav class="page__menu menu">
+			<ul class="menu__list r-list" style="margin-left: 100px;">
+			  <li class="menu__group"><a href="{% url 'home' %}" class="menu__link r-link text-underlined">Башкы-Бет</a></li>
+			  <li class="menu__group"><a href="{% url 'kitepter' %}" class="menu__link r-link text-underlined">Китептер</a></li>
+			  <li class="menu__group"><a href="{% url 'belgiluu-insandar' %}" class="menu__link r-link text-underlined">Белгилүү инсандар</a></li>
+			  <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">Биз жөнүндө</a></li>
+			</ul>
+		</nav>
+
+	<!-- Menu -->
+	</header>
+		<div class="img-text-body" style="margin: 20px; margin-left: 140px;">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Tschingis_Ajtmatow.jpg/274px-Tschingis_Ajtmatow.jpg" width="200" height="200" style="">
+			<h1 style="margin-left: 210px; margin-top: -200px; position: absolute; font-size: 20px;">
+                Чыңгыз Айтматов -
+                <small>
+                    1928-жылы 12-декабрда азыркы Кыргыз Республикасынын Талас облусунун Кара-Буура районундагы Шекер айылында мамлекеттик кызматкердин үй-бүлөсүндө туулган. Ал кезде Шекер айылы ССРСдин РСФСРинин Кыргыз АССРинин Талас кантонунда болчу. Чоң атасы Айтмат кыргыздын кытай уруусунан чыккан бай кишининуулу болгон.
+
+                    Атасы Төрөкул Айтматов адегенде 1927-жылдан тартып, 1932-жылга чейин большевиктер партиясынын Жалал-Абад кантонунун биринчи катчысы, андан соң Кыргыз обкомунун катчысы болгон. Андан соң Төрөкул 1937-жылы репрессияланып, 1938-жылы жазыксыз жерден "пантүркист" катары атылып кеткен. Эл ичинде кадыр-барктуу, көрүнүктүү адамдардан болгон.
+
+                    Апасы Нагима Хамзеевна Айтматова - теги боюнча татар. Чыңгыздын таятасы Хамза - караколдук бай жана айдың татар соодагери болгон. Азыр да Каракол шаарында Хамзанын эки кабат үйү сакталып турат. Нагима жергиликтүү театрда актриса болгон. Билимдүү, эл оозуна алынган, акылдуу аялдардан болгон.
+
+                    1942-жылы II Дүйнөлүк согуштун кесепетинен Чыңгыз Айтматовго мектепти убактылуу таштоого туура келет.
+                </small>
+            </h1>
+			<h5 style="position: absolute; margin-left: 40px; margin-top: 10px;">(1928-2008)</h5>
+            <p style="margin-top: 40px;">
+                Ал убакта Айтматов 14 жашта эле. Шекер эли аны кат-сабаттуу болгондуктан айыл өкмөтүнүн катчысы кылып шайлап коёт. Ошол кезде жаштардын арасында кирилче кат тааныган улан-кыздар саналуу гана эле (калгандары кыргыздын арапча же латынча жазмаларын билишкен).
+
+                Жаш Чыңгыздын башына кыйынчылыктар түшөт. Бирок ал баарына чыдамкайлык менен туруштук бере алды..
+
+                Андан кийин ошол эле согуш жылдарында райондук салык чогултуучу болуп иштейт. Айыл калкынан салык чогултат. Бирок согуш маалында ага салык чогултуу оңойго турган жок. Бир жылдан кийин, 1944-жылы август айында бул ишин өз эрки менен таштайт да, тракторлук бригаданын эсепчиси болуп иштейт.
+
+                1946-жылы, сегизинчи классты аяктагандан кийин Жамбылдагы зооветеринардык техникумга окууга өтөт.
+                1948-жылы техникумду мыкты аяктап бүтүргөндөн кийин Кыргыз айыл-чарба институтуна окууга кирет. Аны дагы 1953-жылы мыкты аяктайт.
+
+                1959–1965-жж. орусча "Литературный Кыргызстан" журналынын баш редактору болгон.
+
+                "Правда" гезитинин кабарчысы да болуп иштеген.
+
+                1988–1990-жж. Москвада чыгуучу "Иностранная литература" журналынын баш редактору болгон.
+
+                Коомдук иштерди да аткарган.
+
+                1964–1986-жж. Кыргызстан Кинематографисттер Биримдигинин Биринчи катчысы болгон. <br>
+                1986-жылдан - Кыргызстан Жазуучулар Биримдигинин Биринчи катчысы болгон.<br>
+
+                1966-89-жылдары СССР Жогорку Кеңешини н депутаты болгон.<br>
+
+                1989-91-жж. СССР Эл депутаты болгон.<br><br>
+                «Манас» эпосу профессионал жазуучулар үчүн жеке эле драматургия жаатында гана эмес, прозада, поэзияда көркөм булак болуп келүүдө.жана болгон окшойт корунот ко дейм
+
+                Прозада биринчи кезекте Ч. Айтматовдун эстетикалык ишмердүүлүгү өзгөчөлөнүп турат. Атактуу жазуучу улуу эпосту изилдеп, пропагандалап гана тим болбостон, анын сюжетин, идеяларын, көркөм каражаттарын чыгармаларында өтө билгичтик, чеберчилик менен пайдаланды.
+
+                К. Асаналиев мындай дейт: «Манас» Айтматовдун «көркөм акыл-зээнинде кандайдыр бир айрым үзүндүлөрү, кээ бир белгилери менен эмес, башайт».
+
+                «Манас» эпосун айтуу учурунда кунт коюп «манасчыдан угуп отуруп, ар бир сүрөттөө өз ордунда экенин көрүп, ар бир сүрөттөөнүн өзүнчө көркөмдүк системасы, көркөмдүк максаты бар экенин сезип, элдин көркөмдүк фантазиясына таң калбай койбойсуң» дейт Айтматов эпос жөнүндө ("Манас" энциклопедиясы. Мамлекеттик тил жана энциклопедия борбору. Бишкек: Кыргыз энциклопедиясынын Башкы редакциясы, - 1995. 1-т.)
+
+                Эстеликтер <br>
+
+                2011-жылдын 30-августунда Бишкектин борборундагы Ала-Тоо аянтынын түштүк тарабына Чыңгыз Айтматовдун айкели тургузулду.
+
+                Анын ачылыш аземине Кыргызстандын президенти Роза Отунбаева, премьер-министр Алмазбек Атамбаев, Жогорку Кеңештин төрагасы Ахматбек Келдибеков баштаган өлкө жетекчилери, Орусиянын президентининин администрациясынын класс жетекчиси Сергей Сарышкин, элчилер, коомчулук өкүлдөрү катышты.
+
+                Колодон жасалган, бийиктиги 3 метр болгон айкел Орусияда жасалган.<br><br>
+
+                <h5>Сыйлыктары. Наамдары </h5><br>
+
+                1958 - "Эмгектеги артыкчылыгы" медалы менен сыйланган.<br>
+                1962 - "Эмгек Кызыл Туу" ордени менен сыйланган.<br>
+                1963 - "Повести гор и степей" деген китеби үчүн Лениндик сыйлыкка татыктуу болгон.<br>
+                1967 - "Эмгек Кызыл Туу" ордени менен сыйланган.<br>
+                1968 (август айында)- Кыргыз ССРинин эл жазуучусу деген ардактуу наам берилген.<br>
+                1968 (ноябрь айында) - "Жаныбарым, Гүлсары" повести үчүн Мамлекеттик сыйлыкка татыктуу болгон.<br>
+                1971 - Ленин ордени менен сыйланган.<br>
+                1974 - Н. К. Крупская атындагы медаль менен сыйланган.<br>
+                1975 - "Манас атанын ак кар,көк музу" очерки үчүн "Огонек" журналынын сыйлыгы ыйгарылган.<br>
+                1976 - "Эрте келген турналар" аттуу повести үчүн Кыргыз ССРинин Токтогул атындагы Мамлекеттик сыйлыгы ыйгарылган.<br>
+                1977 - "Ак кеме" повести жана ал боюнча жазылгал көркөм фильмдин сценарийи үчүн СССРдин Мамлекеттик сыйлыгы ыйгарылган.<br>
+                1978 - Ленин ордени жана "Орок жана Балка" алтын медалы менен сыйланган; Социалисттик эмгектин Баатыры" деген * наам ыйгарылган.<br>
+                1979 - "Эрте келген турналар" жана "Деңиз бойлой жорткон Ала дөбөт" аттуу чыгармаларындагы терең гуманизм жана адам улуулугунун духун ачкандыгы үчүн Италиянын Вольтерра шаарынын көркөм коомчулугу 1-сыйлыгын ыйгарышкан.<br>
+                1980 - Италияда "Эрте келген турналар" жана "Дениз бойлой жорткон Ала дөбөт" чыгармалары үчүн эл аралык "Этрурия" сыйлыгы тапшырылган.<br>
+                1983 - "Кылым карытар бир күн" романы үчүн СССРдин Мамлекеттик сыйлыгын алган.<br>
+                1984 - "Элдердин достугу" ордени менен сыйланган.<br>
+                1987 (май айында) - Польшадагы балдардын сунушу боюнча ойлонуп табылган "Жылмаюу" ордени ыйгарылган.<br><br>
+
+                <h5>Жарык көргөн китептери Кыргыз тилинде</h5><br>
+
+                    Обон: Повесть жана аңгемелер. - Ф.: Кыргызмамбас, 1959. - 192 б.<br>
+                    Биринчи мугалим: Повесть. - Б.: Кыргызокуупедмамбас, 1953. - 75 б.<br>
+                    Саманчынын жолу: Повесттер жана аңгемелер. - Ф.: Кыргызмамбас, 1963. - 320 б.<br>
+                    Атадан калган туяк: Аңгемелер. - Ф.: Мектеп, 1970. - 26 б.<br>
+                    Атадан калган туяк: Аңгемелер. - Ф.: Мектеп, 1971. - 26 б.ам<br>
+                    Түнкү сугат: Аңгеме. - Ф.: Кыргызстан, 1975. - 42 б.<br>
+                    Жамийла: Повесть. - Ф.: Кыргызстан, 1977. - 92 б.<br>
+                    Биринчи мугалим: Повесттер жана аңгемелер. - Ф.: Мектеп, 1978. - 314 б.<br>
+                    Гүлсарат: Повесттер. - Ф.: Кыргызстан, 1978. - 644 б.<br>
+                    Делбирим: Повесттер, аңгемелер, драма. - Ф.: Кыргызстан, 1981. - 608 б.<br>
+                    Эрте келген турналар: Повесть. - Ф.: Мектеп, 1981. - 152 б.<br>
+                    Бугу-эне: Жомок. - Ф.: Мектеп, 1982. - 21 б.<br>
+                    Үч томдон турган чыгармалар жыйнагы: 1 - 2-т. - Ф.: Кыргызстан, 1982.<br>
+                    Үч томдон турган чыгармалар жыйнагы: 3-т. - Ф.: Кыргызстан, 1983. - 427 б.<br>
+                    Чыпалак бала: Жомок. - Ф.: Мектеп, 1985. - 24 б.<br>
+                    Ак кеме: Повесть. - Ф.: Мектеп, 1986. - 160 б.<br>
+                    Биз дүйнөнү жаратабыз, дүйнө бизди жаратат: Макалалар, маектешүүлөр, сүйлөгөн сөздөр. - Ф.: Кыргызстан,1988. - 400 б.<br>
+                    Кыямат: Роман. - Ф.: Адабият, 1988. - 352 б.<br>
+                    Жетинин бири. «Кыямат» романынан үзүндү. - Ф.: Адабият, 1989. - 16 б.<br>
+                    Кайрылып куштар келгенче: Аңгеме. - Б.: Шам, 1995. - 20 б.<br>
+                    Кассандра тамгасы: Роман. Которгон М.Төлөмүшев. / Соңку сөзүн жазган А.Акматалиев. - Б.: Кыргызстан, 1996. - 254 б.<br><br>
+
+                    <h5>Беш томдон турган чыгармалар жыйнагы.</h5><br>
+
+                    1-том: Повесттер, аңгемелер. - Б.: Шам, 1999. - 432 б.<br>
+                    2-том: Повесттер. - Б.: Шам, 1999. - 496 б.<br>
+                    3-том: Роман, повесттер. - Б.: Шам, 1999. - 520 б.<br>
+                    4-том: Роман, аңгемелер. - Б.: Шам, 1999. - 452 б.<br>
+                    5-том: Роман, драма, публицистикалар. - Б.: Шам, 1999. - 560 б.<br>
+                    Ч.Айтматов, М.Шаханов. Аскада калган аңчынын ыйы. – Б.: Учкун, 2001. – 414 б.<br>
+            </p>
+        </div>
+	<!-- Footer -->
+	<footer class="text-center text-lg-start bg-light text-muted">
+	  <!-- Section: Social media -->
+	  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+		<!-- Left -->
+		<div class="me-5 d-none d-lg-block">
+		  <span>Get connected with us on social networks:</span>
+		</div>
+		<!-- Left -->
+
+		<!-- Right -->
+		<div>
+		  <a href="" class="me-4 text-reset">
+			<i class="fab fa-facebook-f"></i>
+		  </a>
+		  <a href="" class="me-4 text-reset">
+			<i class="fab fa-twitter"></i>
+		  </a>
+		  <a href="" class="me-4 text-reset">
+			<i class="fab fa-google"></i>
+		  </a>
+		  <a href="" class="me-4 text-reset">
+			<i class="fab fa-instagram"></i>
+		  </a>
+		  <a href="" class="me-4 text-reset">
+			<i class="fab fa-linkedin"></i>
+		  </a>
+		  <a href="" class="me-4 text-reset">
+			<i class="fab fa-github"></i>
+		  </a>
+		</div>
+		<!-- Right -->
+	  </section>
+	  <!-- Section: Social media -->
+
+	  <!-- Section: Links  -->
+	  <section class="">
+		<div class="container text-center text-md-start mt-5">
+		  <!-- Grid row -->
+		  <div class="row mt-3">
+			<!-- Grid column -->
+			<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+			  <!-- Content -->
+			  <h6 class="text-uppercase fw-bold mb-4">
+				<i class="fas fa-gem me-3"></i>Company name
+			  </h6>
+			  <p>
+				Here you can use rows and columns to organize your footer content. Lorem ipsum
+				dolor sit amet, consectetur adipisicing elit.
+			  </p>
+			</div>
+			<!-- Grid column -->
+
+			<!-- Grid column -->
+			<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+			  <!-- Links -->
+			  <h6 class="text-uppercase fw-bold mb-4">
+				Products
+			  </h6>
+			  <p>
+				<a href="#!" class="text-reset">Angular</a>
+			  </p>
+			  <p>
+				<a href="#!" class="text-reset">React</a>
+			  </p>
+			  <p>
+				<a href="#!" class="text-reset">Vue</a>
+			  </p>
+			  <p>
+				<a href="#!" class="text-reset">Laravel</a>
+			  </p>
+			</div>
+			<!-- Grid column -->
+
+			<!-- Grid column -->
+			<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+			  <!-- Links -->
+			  <h6 class="text-uppercase fw-bold mb-4">
+				Useful links
+			  </h6>
+			  <p>
+				<a href="#!" class="text-reset">Pricing</a>
+			  </p>
+			  <p>
+				<a href="#!" class="text-reset">Settings</a>
+			  </p>
+			  <p>
+				<a href="#!" class="text-reset">Orders</a>
+			  </p>
+			  <p>
+				<a href="#!" class="text-reset">Help</a>
+			  </p>
+			</div>
+			<!-- Grid column -->
+
+			<!-- Grid column -->
+			<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+			  <!-- Links -->
+			  <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+			  <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+			  <p>
+				<i class="fas fa-envelope me-3"></i>
+				info@example.com
+			  </p>
+			  <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+			  <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+			</div>
+			<!-- Grid column -->
+		  </div>
+		  <!-- Grid row -->
+		</div>
+	  </section>
+	  <!-- Section: Links  -->
+
+	  <!-- Copyright -->
+	  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+		© 2021 Copyright:
+		<a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+	  </div>
+	  <!-- Copyright -->
+	</footer>
+	<!-- Footer -->
+</body>
+</html>

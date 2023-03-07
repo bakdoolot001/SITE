@@ -1,0 +1,199 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Бекмамат Осмонов</title>
+	<link rel="shortcut icon"
+	href="{% static 'main/img/logo_burkut2.png' %}"
+	type="image/x-icon">
+</head>
+<link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<body>
+	<header>
+		<div>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light" id="header">
+				<a class="navbar-brand" href="{% url 'home' %}">
+					<img src="{% static 'main/img/logo_burkut.png' %}" width="100" height="70" class="logo">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="icons">
+				<a href="http://instagram.com/share.php?url=file:///home/bakdoolot/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/OUR%20SITE/bishkek.html"><i class="fa-brands fa-instagram"></i></a>
+				<a href="http://facebook.com/share.php?u=file:///home/bakdoolot/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/OUR%20SITE/bishkek.html"><i class="fa-brands fa-facebook"></i></a>
+				<a href="https://telegram.me/share/url?url=file:///home/bakdoolot/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/OUR%20SITE/bishkek.html"><i class="fa-brands fa-telegram"></i></a>
+				<a href="http://whatsapp.com/share.php?url=file:///home/bakdoolot/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/OUR%20SITE/bishkek.html"><i class="fa-brands fa-whatsapp"></i></a>
+			  </div>
+				<nav class="navbar navbar-light bg-light">
+				  <form class="form-inline">
+					<input class="form-control mr-sm-2" type="search"  aria-label="Search" style="width: 300px;">
+                  <a href="#" type="search"><i class="fa-solid fa-magnifying-glass"></i></a>
+				  </form>
+				</nav>
+			  <div class="langWarp" style="margin-left: 100px;">
+					<a href="#" language="english">EN</a>
+					<a href="#" language="russia">RU</a>
+					<a href="#" language="kyrgyz">KG</a>
+			  </div>
+			</nav>
+		</div>
+		<!-- Menu -->
+
+		<nav class="page__menu menu">
+			<ul class="menu__list r-list" style="margin-left: 100px;">
+			  <li class="menu__group"><a href="{% url 'home' %}" class="menu__link r-link text-underlined">Башкы-Бет</a></li>
+			  <li class="menu__group"><a href="{% url 'kitepter' %}" class="menu__link r-link text-underlined">Китептер</a></li>
+			  <li class="menu__group"><a href="{% url 'belgiluu-insandar' %}" class="menu__link r-link text-underlined">Белгилүү инсандар</a></li>
+			  <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">Биз жөнүндө</a></li>
+			</ul>
+		</nav>
+
+	<!-- Menu -->
+	</header>
+		<div class="img-text-body" style="margin: 20px; margin-left: 140px;">
+			<img src="https://sputnik.kg/img/103932/47/1039324714_0:0:744:1024_600x0_80_0_0_f9e3e2cc58832c92dfe0d4312c428910.jpg" width="200" height="200" style="">
+			<h1 style="margin-left: 210px; margin-top: -200px; position: absolute; font-size: 20px;">
+                Бекмамат Осмонов - <small>
+                1946-жылы 24-майда Жалал-Абад облусунун Базар-Коргон районундагы Акман айылында колхозчунун үй-бүлөсүндө туулган. Сегиз уулдун төртүнчүсү болгон. Бир туугандардын улуусу гана ата жолун жолдоп жылкычылыкты аркалабаса, калган жетөө жогорку билим алган. Орто мектепти 1963-жылы аяктаган соң Фрунзе шаарындагы Айыл чарба институтунун зооветеринария факультетине тапшырат. Окуу жайды 1968-жылы артыкчылык диплому менен бүтүрүп, зоотехник кесибине ээ болот. Дипломун алган соң советтик армиянын катарында кызмат өтөп келет.
+
+                Чоң-Алайдагы ийгилик. Келечектеги саясатчынын алгачкы эмгек жолу 1969-жылы Ош облусунун Кара-Суу районундагы "Катта-Талдык" асыл тукум кой заводунда зоотехник болуп иштөөдөн башталат. Ишине тың, аракетчил Осмонов 1971-1972-жылдары Араван районунун айыл чарба башкармасына башкы зоотехниктикке, 26 жашында Алай районунун "Чоң-Алай" совхозуна директорлукка дайындалат. Осмонов башкарып турган төрт жылда бул совхоз ийгиликтерди жаратып, бүт өлкөгө аты чыкканы айтылып келет.
+
+                Саясатка аралашуу. Осмоновдун саясий карьерасы абдан тездик менен өсүп, 1978-жылы Алай райондук аткаруу комитетинин төрагасы, 1985-жылы партиянын Ош облустук комитетинин айыл чарба бөлүмүнүн башчысы кызматтарына дайындалат.
+            </small>
+            </h1>
+			<h5 style="position: absolute; margin-left: 40px; margin-top: 10px;">(1926-1958)</h5>
+            <p style="margin-top: 40px;">
+                1988-жылдан баштап эки жыл партиянын Токтогул райондук комитетинин биринчи катчысынын кызматын аркалайт. 1990-жылы Жалал-Абад облустук кеңештин төрагалыгына шайланат.
+
+                Куугунтукка кабылган жетекчи. 1991-жылы жаңыдан уюшулган Жалал-Абад облусунун алгачкы губерантору болуп дайындалып, бул кызматта 1992-жылдын ноябрына чейин иштеген. 1990-жылдан баштап легендарлуу парламенттин, андан соң 1995-жылы Жогорку Кеңештин II чакырылышынын Эл өкүлдөр жыйынынын депутаты болгон. Эл өкүлү болуп жүргөн кезинде да эч нерседен тайманбай оюндагысын айтып турган. Кесиптештери жада калса президентти да катуу сындаганын айтышат. Замандаштары анын жумуштан кетишине ошол убактагы чоң кызматкерлердин кысымы негиз болгон дешет. Себеби карапайым калкка ар дайым жакын болуп, эл үчүн иштеген Осмоновдун кадыры күн сайын өсүп турган. Облустун экономикасын көтөрүп, жолдорду оңдоп, Жалал-Абад телерадиокомпаниясын уюштурган. Олуттуу атаандаштан корккон өлкө жетекчилери ар кандай саясий оюндарды уюштуруп, саясий куугунтук көрсөтө башташкан. Кызматынан кеткенден кийин Ош облустук мамлекеттик администрациясында иштеп, облустук кеңештин төрагасы да болгон. Кийин өмүрүнүн аягына чейин Ош облусунун токой чарба башкармалыгынын директорлугун аркалаган. Осмоновго 1996-жылы "Кыргыз Республикасынын айыл чарбасынын эмгек сиңирген ишмери" деген наам ыйгарылган.
+                Замандаштары Осмоновду интеллектуалдык деңгээли өтө жогору, тарыхты жана маданиятты мыкты билген билимдүү инсан экендигин айтышат. Бир гана кыргыз эмес, дүйнөлүк адабиятты да окуп, ар дайым колунан китеп түшкөн эмес дешет. Аны менен маектешкендер алп денелүү саясатчы сыртынан айбаттуу, сүрдүү көрүнгөнү менен сүйлөшө келгенде жаш-кары дебей сылык мамиле кылып, ар дайым күлүмсүрөп жүргөн жайдары, жумшак мүнөз инсан экендигин эскеришет. Кээ бир учурда колуна калем алып ыр да жаза койчу экен.Осмоновду шум ажал эрте алган. Жүрөк оорусуна байланыштуу Москва шаарында операция жасалып, 1997-жылы 28-октябрында 52 жашында дүйнөдөн кайткан. Тааныш-туугандары анын эч качан оорудум деп айтпаганын эскеришет. Ал кесиби боюнча математика мугалими жубайы Сажида менен 1970-жылы баш кошкон. Экөө 27 жыл чогуу түтүн булатып төрт уул, эки кызды тарбиялашкан. Уулу Темирбек Бекмаматов убагында башкы прокурордун 1-орун басары кызматын аркалаган.
+            </p>
+        </div>
+	<!-- Footer -->
+	<footer class="text-center text-lg-start bg-light text-muted">
+	  <!-- Section: Social media -->
+	  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+		<!-- Left -->
+		<div class="me-5 d-none d-lg-block">
+		  <span>Get connected with us on social networks:</span>
+		</div>
+		<!-- Left -->
+
+		<!-- Right -->
+		<div>
+		  <a href="" class="me-4 text-reset">
+			<i class="fab fa-facebook-f"></i>
+		  </a>
+		  <a href="" class="me-4 text-reset">
+			<i class="fab fa-twitter"></i>
+		  </a>
+		  <a href="" class="me-4 text-reset">
+			<i class="fab fa-google"></i>
+		  </a>
+		  <a href="" class="me-4 text-reset">
+			<i class="fab fa-instagram"></i>
+		  </a>
+		  <a href="" class="me-4 text-reset">
+			<i class="fab fa-linkedin"></i>
+		  </a>
+		  <a href="" class="me-4 text-reset">
+			<i class="fab fa-github"></i>
+		  </a>
+		</div>
+		<!-- Right -->
+	  </section>
+	  <!-- Section: Social media -->
+
+	  <!-- Section: Links  -->
+	  <section class="">
+		<div class="container text-center text-md-start mt-5">
+		  <!-- Grid row -->
+		  <div class="row mt-3">
+			<!-- Grid column -->
+			<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+			  <!-- Content -->
+			  <h6 class="text-uppercase fw-bold mb-4">
+				<i class="fas fa-gem me-3"></i>Company name
+			  </h6>
+			  <p>
+				Here you can use rows and columns to organize your footer content. Lorem ipsum
+				dolor sit amet, consectetur adipisicing elit.
+			  </p>
+			</div>
+			<!-- Grid column -->
+
+			<!-- Grid column -->
+			<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+			  <!-- Links -->
+			  <h6 class="text-uppercase fw-bold mb-4">
+				Products
+			  </h6>
+			  <p>
+				<a href="#!" class="text-reset">Angular</a>
+			  </p>
+			  <p>
+				<a href="#!" class="text-reset">React</a>
+			  </p>
+			  <p>
+				<a href="#!" class="text-reset">Vue</a>
+			  </p>
+			  <p>
+				<a href="#!" class="text-reset">Laravel</a>
+			  </p>
+			</div>
+			<!-- Grid column -->
+
+			<!-- Grid column -->
+			<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+			  <!-- Links -->
+			  <h6 class="text-uppercase fw-bold mb-4">
+				Useful links
+			  </h6>
+			  <p>
+				<a href="#!" class="text-reset">Pricing</a>
+			  </p>
+			  <p>
+				<a href="#!" class="text-reset">Settings</a>
+			  </p>
+			  <p>
+				<a href="#!" class="text-reset">Orders</a>
+			  </p>
+			  <p>
+				<a href="#!" class="text-reset">Help</a>
+			  </p>
+			</div>
+			<!-- Grid column -->
+
+			<!-- Grid column -->
+			<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+			  <!-- Links -->
+			  <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+			  <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+			  <p>
+				<i class="fas fa-envelope me-3"></i>
+				info@example.com
+			  </p>
+			  <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+			  <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+			</div>
+			<!-- Grid column -->
+		  </div>
+		  <!-- Grid row -->
+		</div>
+	  </section>
+	  <!-- Section: Links  -->
+
+	  <!-- Copyright -->
+	  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+		© 2021 Copyright:
+		<a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+	  </div>
+	  <!-- Copyright -->
+	</footer>
+	<!-- Footer -->
+</body>
+</html>

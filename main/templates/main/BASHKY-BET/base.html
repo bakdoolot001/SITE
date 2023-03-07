@@ -1,0 +1,82 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BURKUT</title>
+	<link rel="shortcut icon"
+	href="{% static 'main/img/logo_burkut2.png' %}"
+	type="image/x-icon">
+</head>
+	<link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'main/js/main.js' %}">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<body>
+    {% include 'block/header.html' %}
+    <!-- Center -->
+	<div class="container" id="container">
+		<div class="card-deck">
+		  <div class="card col-md-12">
+			<a href="{% url 'bishkek' %}"><img class="card-img-top" src="http://zarubezhexpo.ru/info_bishkek/files/file0011.jpg" alt="Card image cap"></a>
+			<div class="card-body">
+			  <h5 class="card-title">Бишкек</h5>
+			  <p class="card-text">Бишкек шаары...</p>
+			</div>
+		  </div>
+		  <div class="card card col-sm-12">
+			<a href="{% url 'batken' %}"><img class="card-img-top" src="https://sputnik.kg/img/104654/35/1046543501_0:18:3069:1744_1920x0_80_0_0_ce38e5d48cd768898c78058de61c7add.jpg" alt="Card image cap"></a>
+			<div class="card-body">
+			  <h5 class="card-title">Баткен</h5>
+			  <p class="card-text">Баткен облусу...</p>
+			</div>
+		  </div>
+		  <div class="card card col-sm-12">
+			<a href="{% url 'jalal_abad' %}"><img class="card-img-top" src="http://st-1.akipress.org/127/.storage/limon/images/2014leto/4b209ef1da1490cc5b5fe2abeb3318e4.jpg" alt="Card image cap"></a>
+			<div class="card-body">
+			  <h5 class="card-title">Жалал-Абад</h5>
+			  <p class="card-text">Жалал-Абад облусу...</p>
+			</div>
+		  </div>
+		</div>
+	</div>
+	<div class="container" id="container-2">
+		<div class="card-deck">
+		  <div class="card card col-sm-12">
+			<a href="{% url 'talas' %}"><img class="card-img-top" src="https://too.kg/wp-content/uploads/22424230_1541876789192325_5978347128932495931_o-2.jpg" alt="Card image cap"></a>
+			<div class="card-body">
+			  <h5 class="card-title">Талас</h5>
+			  <p class="card-text">Талас облусу...</p>
+			</div>
+		  </div>
+		  <div class="card card col-sm-12">
+			<a href="{% url 'naryn' %}"><img class="card-img-top" src="https://asiamountains.net/assets/cache_image/assets/lib/resized/396/1600x1066_0x0_d0b.jpg" alt="Card image cap"></a>
+			<div class="card-body">
+			  <h5 class="card-title">Нарын</h5>
+			  <p class="card-text">Нарын облусу...</p>
+			</div>
+		  </div>
+		  <div class="card card col-sm-12">
+			<a href="{% url 'yssyk_kol' %}"><img class="card-img-top" src="https://vivid-travel.kz/assets/images/tours/issykul-novyj/mob3.jpg" alt="Card image cap"></a>
+			<div class="card-body">
+			  <h5 class="card-title">Ыссык-Көл</h5>
+			  <p class="card-text">Ыссык-Көл облусу...</p>
+			</div>
+		  </div>
+		  <div class="card card col-sm-12">
+			<a href="{% url 'chuy' %}"><img class="card-img-top" src="https://too.kg/wp-content/uploads/Burana-600x400.jpg" alt="Card image cap"></a>
+			<div class="card-body">
+			  <h5 class="card-title">Чүй</h5>
+			  <p class="card-text">Чүй облусу...</p>
+			</div>
+		  </div>
+		</div>
+	</div>
+	<!-- Center -->
+    {% block content %}{% endblock %}
+    {% include 'block/footer.html' %}
+</body>
+</html>

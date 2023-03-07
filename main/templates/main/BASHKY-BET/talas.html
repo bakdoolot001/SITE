@@ -1,0 +1,196 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Талас облусу...</title>
+	<link rel="shortcut icon"
+	href="{% static 'main/img/logo_burkut2.png' %}"
+	type="image/x-icon">
+</head>
+<link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<body>
+	<div>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light" id="header">
+			<a class="navbar-brand" href="index.html">
+    			<img src="{% static 'main/img/logo_burkut.png' %}" width="100" height="70" class="logo">
+  			</a>
+		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="icons">
+		  	<a href="http://instagram.com/share.php?url=file:///home/bakdoolot/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/OUR%20SITE/bishkek.html"><i class="fa-brands fa-instagram"></i></a>
+		  	<a href="http://facebook.com/share.php?u=file:///home/bakdoolot/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/OUR%20SITE/bishkek.html"><i class="fa-brands fa-facebook"></i></a>
+		  	<a href="https://telegram.me/share/url?url=file:///home/bakdoolot/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/OUR%20SITE/bishkek.html"><i class="fa-brands fa-telegram"></i></a>
+		  	<a href="http://whatsapp.com/share.php?url=file:///home/bakdoolot/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/OUR%20SITE/bishkek.html"><i class="fa-brands fa-whatsapp"></i></a>
+		  </div>
+			<nav class="navbar navbar-light bg-light">
+			  <form class="form-inline">
+			    <input class="form-control mr-sm-2" type="search"  aria-label="Search" style="width: 300px;">
+                  <a href="#" type="search"><i class="fa-solid fa-magnifying-glass"></i></a>
+			  </form>
+			</nav>
+		  <div class="langWarp" style="margin-left: 100px;">
+  				<a href="#" language="english">EN</a>
+  				<a href="#" language="russia">RU</a>
+  				<a href="#" language="kyrgyz">KG</a>
+		  </div>
+		</nav>
+	</div>
+	<header>
+		<!-- Menu -->
+
+		<nav class="page__menu menu">
+		    <ul class="menu__list r-list" style="margin-left: 100px;">
+		      <li class="menu__group"><a href="{% url 'home' %}" class="menu__link r-link text-underlined">Башкы-Бет</a></li>
+		      <li class="menu__group"><a href="{% url 'kitepter' %}" class="menu__link r-link text-underlined">Китептер</a></li>
+		      <li class="menu__group"><a href="{% url 'belgiluu-insandar' %}" class="menu__link r-link text-underlined">Белгилүү инсандар</a></li>
+		      <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">Биз жөнүндө</a></li>
+		    </ul>
+	  	</nav>
+
+    <!-- Menu -->
+	</header>
+	<div class="container">
+		<img src="https://imgtest.mir24.tv/uploaded/images/2020/November/5a49914817f1c129b05a60c23019fd63f6bb88c907fd5b67f73b6b83e06e8950.jpg" width="1100" height="500" style="margin-top: 20px;">
+		<div class="bishkek-text">
+			<h6>Талас облусу республиканын түндүк-батыш бөлүгүндө жайгашкан жана Түндүк-Батышынан Казакстан Республикасы менен, Чыгышынан – Чүй облусу, түштүгүнөн – Жалал-Абад облусу менен чектешет.
+
+			Облустун жалпы аянты 11,4 миң кв.км же Кыргыз Республикасынын аймагынын 6% ын түзөт. Облустук борбор-Талас шаары.  Талас облусунун курамына 4 район, бир облустук маанидеги шаар – Талас шаары жана 37 айылдык аймак кирет.
+
+			Бакай-Ата району –Бакай-Ата айылы (райондун борбору)
+
+			Кара-Буура району – Кызыл-Адыр айылы (райондун борбору)
+
+			Манас району – Покровка айылы (райондун борбору)
+
+			Талас району – Манас айылы (райондун борбору)Тоолордун орографиялык түзүлүшүнүн өзгөчөлүгү арктикалык суук жана континенттик аба массаларынын аймактын климатына тийгизген таасирин кыйла басаңдатат. Жай мезгилинде бийик кырка тоолор Орто жана Борбордук Азия чөлдөрүнүн аптабын кыйла серүүндөтөт. Бирок, батыштан соккон аба агымы жана анын түн.-батыш, түштүкбатыш салаалары Түн. жана Чыгыш Ферганага тоскоолсуз кирип, облустун аймагына жана анын түрдүү ландшафттык зоналарына жагымдуу аба ырайын түзөт. Ички Теңир-Тоодо жайгашкан Кетмен-Төбө жана Тогуз-Торо өрөөндөрүнүн климаты облустун Фергана өндүрү жак бөлүгүнө караганда кыйла башкачараак. Бул өрөөндөрдө муздак тоо абасы туруп калат; декабрдан мартка чейинки темп-расынын орточо максимуму Түштүк Кыргызстандын башка метеорологиялык станцияларыныкына караганда 10°Сге төмөн болот. Жаан-чачын режими окшош болгондугуна карабастан, жааган жаан-чачындын өлчөмү менен абанын темпрасынын ортосунда айырмачылык сөзсүз болот. Аймактын деңиз деңгээлинен бийиктигине, тоо капталдарынын экспозицияларына жана рельефинин өзгөчөлүктөрүнө байланыштуу жайы ысык, жылуу, серүүн же суук болушу мүмкүн. Июлдун орточо температурасы этек тоо-адырлуу зонада 2522°С, жапыз тоолуу зонада 22-15°С, орто бийик тоолуу зонада 15-10°С, бийик тоолуу зонада 105°С, нивалдык-гляциалдык зонада 5-0°С. Жайдын биринчи жарымы жаанчыл, экинчи жарымы жана күз маалы өтө кургакчыл. Кышы жалпысынан мелүүн-суук, январдын орточо температурасы -3°Сден -15°Сге чейин. Эң төмөнкү темп-ра бийик тоолуу ойдуңдарда адатта Кызыл-Жарда (Тар ойдуңу) абсолюттук минимум -40,9°С, Чаткалда 39,8°С, ал эми ушул эле мезгилде муздак аба туруп калган ойдуңдарда Ошто -25,9°С, Кербенде(1280 м бийиктикте) -26,1°С гана болот. Ушундай эле кубулуш кышында Фергана өрөөнүндө да температуралык инверсияга байланыштуу пайда болот; тоолордо ойдуңдарга караганда жылуураак келет. Атмосфералык жаан-чачын бийиктик зоналуулук боюнча өзгөрөт жана ал ным алып келүүчү аба агымдарына карата жайгашуу экспозициясына байланыштуу. Фергана, Ат-Ойнок, Талас Ала-Тоолорунун түштүк-батыш капталдарында жаан-чачын 500-900 мм жана андан да мол жаайт. Токой-шалбаалуу талаа алкагында мелүүн-жылуу жана нымдуу жер ортолук деңиздик климат мүнөздүү, жаан-чачындын жылдык өлчөмү 500 ммден 900 ммге чейин, анын 50%и вегетация мезгилине туура келет. Чаткал системасына кирген тоолор орографиялык жактан ыктоодо жайгашкандыктан, жаан-чачынга салыштырмалуу жарды (400-500 мм), ал эми Чаткал кырка тоосунун түштүк-батыш капталына тоо аралык ички ойдуңдарындагыдай эле 300400 мм гана жаан-чачын жаайт. Жаан-чачын эң мол жааган мезгили жаз маалы, анын жылдык өлчөмүнүн 60%тен ашыгы кыш-жаз мезгилине туура келет, август-сентябрь эң аз жааган мезгил. Жаан-чачын көбүнчө жамгыр түрүндө жаайт. Тоолордо 2500-3000 мден жогору кардын өлчөмү кыйла зор (жылдык жаан-чачындын 30-50%). Кар катмарынын калыңдыгы тоо этеги-адырлуу зонада 20-25 смден, бийик тоолордо 90-100 смге чейин жетет. Фергана тоо тизмегинин кыр бөлүгүнө жакын кардын калыңдыгы 150 смдей болот.Тоолордун орографиялык түзүлүшүнүн өзгөчөлүгү арктикалык суук жана континенттик аба массаларынын аймактын климатына тийгизген таасирин кыйла басаңдатат. Жай мезгилинде бийик кырка тоолор Орто жана Борбордук Азия чөлдөрүнүн аптабын кыйла серүүндөтөт. Бирок, батыштан соккон аба агымы жана анын түн.-батыш, түштүкбатыш салаалары Түн. жана Чыгыш Ферганага тоскоолсуз кирип, облустун аймагына жана анын түрдүү ландшафттык зоналарына жагымдуу аба ырайын түзөт. Ички Теңир-Тоодо жайгашкан Кетмен-Төбө жана Тогуз-Торо өрөөндөрүнүн климаты облустун Фергана өндүрү жак бөлүгүнө караганда кыйла башкачараак. Бул өрөөндөрдө муздак тоо абасы туруп калат; декабрдан мартка чейинки темп-расынын орточо максимуму Түштүк Кыргызстандын башка метеорологиялык станцияларыныкына караганда 10°Сге төмөн болот. Жаан-чачын режими окшош болгондугуна карабастан, жааган жаан-чачындын өлчөмү менен абанын темпрасынын ортосунда айырмачылык сөзсүз болот. Аймактын деңиз деңгээлинен бийиктигине, тоо капталдарынын экспозицияларына жана рельефинин өзгөчөлүктөрүнө байланыштуу жайы ысык, жылуу, серүүн же суук болушу мүмкүн. Июлдун орточо температурасы этек тоо-адырлуу зонада 2522°С, жапыз тоолуу зонада 22-15°С, орто бийик тоолуу зонада 15-10°С, бийик тоолуу зонада 105°С, нивалдык-гляциалдык зонада 5-0°С. Жайдын биринчи жарымы жаанчыл, экинчи жарымы жана күз маалы өтө кургакчыл. Кышы жалпысынан мелүүн-суук, январдын орточо температурасы -3°Сден -15°Сге чейин. Эң төмөнкү темп-ра бийик тоолуу ойдуңдарда адатта Кызыл-Жарда (Тар ойдуңу) абсолюттук минимум -40,9°С, Чаткалда 39,8°С, ал эми ушул эле мезгилде муздак аба туруп калган ойдуңдарда Ошто -25,9°С, Кербенде(1280 м бийиктикте) -26,1°С гана болот. Ушундай эле кубулуш кышында Фергана өрөөнүндө да температуралык инверсияга байланыштуу пайда болот; тоолордо ойдуңдарга караганда жылуураак келет. Атмосфералык жаан-чачын бийиктик зоналуулук боюнча өзгөрөт жана ал ным алып келүүчү аба агымдарына карата жайгашуу экспозициясына байланыштуу. Фергана, Ат-Ойнок, Талас Ала-Тоолорунун түштүк-батыш капталдарында жаан-чачын 500-900 мм жана андан да мол жаайт. Токой-шалбаалуу талаа алкагында мелүүн-жылуу жана нымдуу жер ортолук деңиздик климат мүнөздүү, жаан-чачындын жылдык өлчөмү 500 ммден 900 ммге чейин, анын 50%и вегетация мезгилине туура келет. Чаткал системасына кирген тоолор орографиялык жактан ыктоодо жайгашкандыктан, жаан-чачынга салыштырмалуу жарды (400-500 мм), ал эми Чаткал кырка тоосунун түштүк-батыш капталына тоо аралык ички ойдуңдарындагыдай эле 300400 мм гана жаан-чачын жаайт. Жаан-чачын эң мол жааган мезгили жаз маалы, анын жылдык өлчөмүнүн 60%тен ашыгы кыш-жаз мезгилине туура келет, август-сентябрь эң аз жааган мезгил. Жаан-чачын көбүнчө жамгыр түрүндө жаайт. Тоолордо 2500-3000 мден жогору кардын өлчөмү кыйла зор (жылдык жаан-чачындын 30-50%). Кар катмарынын калыңдыгы тоо этеги-адырлуу зонада 20-25 смден, бийик тоолордо 90-100 смге чейин жетет. Фергана тоо тизмегинин кыр бөлүгүнө жакын кардын калыңдыгы 150 смдей болот. </h6>
+		</div>
+	</div>
+	<!-- Footer -->
+	<footer class="text-center text-lg-start bg-light text-muted">
+	  <!-- Section: Social media -->
+	  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+	    <!-- Left -->
+	    <div class="me-5 d-none d-lg-block">
+	      <span>Get connected with us on social networks:</span>
+	    </div>
+	    <!-- Left -->
+
+	    <!-- Right -->
+	    <div>
+	      <a href="" class="me-4 text-reset">
+	        <i class="fab fa-facebook-f"></i>
+	      </a>
+	      <a href="" class="me-4 text-reset">
+	        <i class="fab fa-twitter"></i>
+	      </a>
+	      <a href="" class="me-4 text-reset">
+	        <i class="fab fa-google"></i>
+	      </a>
+	      <a href="" class="me-4 text-reset">
+	        <i class="fab fa-instagram"></i>
+	      </a>
+	      <a href="" class="me-4 text-reset">
+	        <i class="fab fa-linkedin"></i>
+	      </a>
+	      <a href="" class="me-4 text-reset">
+	        <i class="fab fa-github"></i>
+	      </a>
+	    </div>
+	    <!-- Right -->
+	  </section>
+	  <!-- Section: Social media -->
+
+	  <!-- Section: Links  -->
+	  <section class="">
+	    <div class="container text-center text-md-start mt-5">
+	      <!-- Grid row -->
+	      <div class="row mt-3">
+	        <!-- Grid column -->
+	        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+	          <!-- Content -->
+	          <h6 class="text-uppercase fw-bold mb-4">
+	            <i class="fas fa-gem me-3"></i>Company name
+	          </h6>
+	          <p>
+	            Here you can use rows and columns to organize your footer content. Lorem ipsum
+	            dolor sit amet, consectetur adipisicing elit.
+	          </p>
+	        </div>
+	        <!-- Grid column -->
+
+	        <!-- Grid column -->
+	        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+	          <!-- Links -->
+	          <h6 class="text-uppercase fw-bold mb-4">
+	            Products
+	          </h6>
+	          <p>
+	            <a href="#!" class="text-reset">Angular</a>
+	          </p>
+	          <p>
+	            <a href="#!" class="text-reset">React</a>
+	          </p>
+	          <p>
+	            <a href="#!" class="text-reset">Vue</a>
+	          </p>
+	          <p>
+	            <a href="#!" class="text-reset">Laravel</a>
+	          </p>
+	        </div>
+	        <!-- Grid column -->
+
+	        <!-- Grid column -->
+	        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+	          <!-- Links -->
+	          <h6 class="text-uppercase fw-bold mb-4">
+	            Useful links
+	          </h6>
+	          <p>
+	            <a href="#!" class="text-reset">Pricing</a>
+	          </p>
+	          <p>
+	            <a href="#!" class="text-reset">Settings</a>
+	          </p>
+	          <p>
+	            <a href="#!" class="text-reset">Orders</a>
+	          </p>
+	          <p>
+	            <a href="#!" class="text-reset">Help</a>
+	          </p>
+	        </div>
+	        <!-- Grid column -->
+
+	        <!-- Grid column -->
+	        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+	          <!-- Links -->
+	          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+	          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+	          <p>
+	            <i class="fas fa-envelope me-3"></i>
+	            info@example.com
+	          </p>
+	          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+	          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+	        </div>
+	        <!-- Grid column -->
+	      </div>
+	      <!-- Grid row -->
+	    </div>
+	  </section>
+	  <!-- Section: Links  -->
+
+	  <!-- Copyright -->
+	  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+	    © 2021 Copyright:
+	    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+	  </div>
+	  <!-- Copyright -->
+	</footer>
+	<!-- Footer -->
+</body>
+</html>
